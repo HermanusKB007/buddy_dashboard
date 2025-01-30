@@ -3,7 +3,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mybuddy.co.za'),
-  title: "Buddy - Simplified Business Automation",
+  title: "Buddy | Simplified Business Automation",
   description: "Buddy helps business owners automate tasks and streamline operations using WhatsApp, giving you more time to focus on growth and customer satisfaction.",
 
   // Basic metadata
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Buddy | Simplified Business Automation",
     description: "Buddy helps business owners automate tasks and streamline operations using WhatsApp, giving you more time to focus on growth and customer satisfaction.",
     siteName: "Buddy",
-    url: 'https://www.mybuddy.co.za',
+    url: 'https://mybuddy.co.za',
     locale: 'en_ZA',
     images: [{
       url: '/Buddy_banner.png',
@@ -28,18 +28,6 @@ export const metadata: Metadata = {
     }],
   },
 
-  // Twitter metadata
-  twitter: {
-    card: 'summary_large_image',
-    title: "Buddy | Simplified Business Automation",
-    description: "Buddy helps business owners automate tasks and streamline operations using WhatsApp, giving you more time to focus on growth and customer satisfaction.",
-    images: [{
-      url: '/Buddy_banner.png',
-      width: 1200,
-      height: 630,
-      alt: 'Buddy | Simplified Business Automation',
-    }],
-  },
 
   // Icons
   icons: {
