@@ -9,18 +9,42 @@ export default function Home() {
       <div className="min-h-screen bg-white flex flex-col">
         {/* Navigation */}
         <nav className="p-4 flex justify-between items-center">
-          <div className="flex items-center gap-4"> {/* Changed to horizontal layout */}
+          <div className="flex items-center gap-4 ml-20">
             <Image
                 src="/buddy_logo.png"
                 alt="Buddy Logo"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 className="object-contain"
             />
-            <div className="flex flex-col justify-center"> {/* Text container */}
+            <div className="flex flex-col justify-center">
               <span className={`text-xl font-semibold ${spaceGrotesk.className}`}>Buddy</span>
               <span className={`text-sm text-slate-600 ${proximaLike.className}`}>Simplified Business Automation</span>
             </div>
+          </div>
+
+          <div className="flex-1 flex justify-end mr-20"> {/* Added wrapper for positioning */}
+            <a
+                href="https://hermanblackie.wixsite.com/buddy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`
+                      px-6 py-2 
+                      bg-yellow-400 
+                      text-black 
+                      border-2 
+                      border-black 
+                      rounded-lg 
+                      ${spaceGrotesk.className}
+                      font-medium
+                      transition-all
+                      hover:bg-black 
+                      hover:text-yellow-500
+                      hover:border-yellow-500
+                    `}
+            >
+              View Marketing Site
+            </a>
           </div>
         </nav>
 
