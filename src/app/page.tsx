@@ -37,12 +37,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-center w-full h-full">
-            <div className="max-w-xl w-full">  {/* Changed from max-w-4xl to max-w-2xl */}
+            <div className="max-w-lg w-full">  {/* Changed from max-w-4xl to max-w-2xl */}
               <Image
                   src="/buddy_building.png"
                   alt="Coming Soon Illustration"
-                  width={500}
-                  height={500}
+                  width={450}
+                  height={450}
                   className="w-full h-auto object-contain"
                   priority
               />
