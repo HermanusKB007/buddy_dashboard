@@ -31,7 +31,7 @@ export default function Home() {
               Something exciting is Coming soon!
             </h1>
             <p className="text-xl text-slate-600">
-              We're working hard to bring you an amazing new experience.
+              We&apos;re working hard to bring you an amazing new experience.
               Stay tuned!
             </p>
           </div>
