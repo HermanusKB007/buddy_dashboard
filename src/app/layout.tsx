@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Buddy | Simplified Business Automation",
     description: "Buddy helps business owners automate tasks and streamline operations using WhatsApp, giving you more time to focus on growth and customer satisfaction.",
     siteName: "Buddy",
-    url: 'https://mybuddy.co.za',
+    url: 'https://www.mybuddy.co.za',
     locale: 'en_ZA',
     images: [{
       url: '/Buddy_banner.png',

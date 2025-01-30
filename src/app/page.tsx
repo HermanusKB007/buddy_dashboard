@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* Navigation - make it responsive */}
-      <nav className="p-4 md:p-4 flex flex-col md:flex-row justify-between items-center">
+      <nav className="p-4 flex flex-col md:flex-row items-start md:items-center">
         {/* Logo and text - stack on mobile */}
-        <div className="flex items-center gap-4 ml-0 md:ml-20 mb-4 md:mb-0">
+        <div className="flex items-center gap-4 ml-0 md:ml-20">
           <Image
             src="/buddy_logo.png"
             alt="Buddy Logo"
@@ -25,30 +25,30 @@ export default function Home() {
         </div>
 
         {/* Button - same width on mobile and desktop */}
-<div className="flex-1 flex justify-center md:justify-end md:mr-20 mt-6 md:mt-0">
-  <a
-    href="https://hermanblackie.wixsite.com/buddy"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`
-      px-6 py-2 
-      bg-yellow-400 
-      text-black 
-      border-2 
-      border-black 
-      rounded-lg 
-      ${spaceGrotesk.className}
-      font-medium
-      transition-all
-      hover:bg-black 
-      hover:text-yellow-400
-      hover:border-yellow-500
-      text-center
-    `}
-  >
-    View Marketing Site
-  </a>
-</div>
+      <div className="hidden md:flex flex-1 justify-end md:mr-20">
+        <a
+          href="https://hermanblackie.wixsite.com/buddy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`
+            px-6 py-2 
+            bg-yellow-400 
+            text-black 
+            border-2 
+            border-black 
+            rounded-lg 
+            ${spaceGrotesk.className}
+            font-medium
+            transition-all
+            hover:bg-black 
+            hover:text-yellow-400
+            hover:border-yellow-500
+            text-center
+          `}
+        >
+          View Marketing Site
+        </a>
+      </div>
       </nav>
 
       {/* Main Content */}
@@ -61,15 +61,41 @@ export default function Home() {
             We&apos;re working hard to bring you an amazing new experience.
             Stay tuned!
           </p>
+
+          <div className="md:hidden mt-6">
+            <a
+                href="https://hermanblackie.wixsite.com/buddy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`
+          px-6 py-2 
+          bg-yellow-400 
+          text-black 
+          border-2 
+          border-black 
+          rounded-lg 
+          ${spaceGrotesk.className}
+          font-medium
+          transition-all
+          hover:bg-black 
+          hover:text-yellow-400
+          hover:border-yellow-500
+          text-center
+        `}
+            >
+              View Marketing Site
+            </a>
+          </div>
         </div>
+
 
         <div className="w-full max-w-sm md:max-w-lg aspect-square flex items-center justify-center">
           <Image
-            src="/buddy_building.png"
-            alt="Coming Soon Illustration"
-            width={600}
-            height={600}
-            className="w-full h-auto object-contain px-4 md:px-0"
+              src="/buddy_building.png"
+              alt="Coming Soon Illustration"
+              width={600}
+              height={600}
+              className="w-full h-auto object-contain px-4 md:px-0"
           />
         </div>
       </main>
