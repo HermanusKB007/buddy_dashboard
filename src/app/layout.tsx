@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://mybuddy.co.za',
     locale: 'en_ZA',
     images: [{
-      url: '/Buddy_banner.png',
+      url: 'https://mybuddy.co.za/Buddy_banner.png',
       width: 1200,
       height: 630,
       alt: 'Buddy | Simplified Business Automation',
