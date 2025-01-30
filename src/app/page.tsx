@@ -32,7 +32,7 @@ export default function Home() {
     rel="noopener noreferrer"
     className={`
       px-6 py-2 
-      bg-yellow-500 
+      bg-yellow-400 
       text-black 
       border-2 
       border-black 
@@ -41,7 +41,7 @@ export default function Home() {
       font-medium
       transition-all
       hover:bg-black 
-      hover:text-yellow-500
+      hover:text-yellow-400
       hover:border-yellow-500
       text-center
     `}
