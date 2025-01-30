@@ -1,11 +1,13 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   console.log('Middleware triggered');
-  console.log('Country:', request.geo?.country);
 
-  const country = request.geo?.country || 'UNKNOWN';
+  // Get country from request headers (Vercel provides this)
+  const country = request.headers.get('x-vercel-ip-country') || 'UNKNOWN';
+
+  console.log('Country:', country);
 
   if (country !== 'ZA') {
     console.log('Blocking access for country:', country);
@@ -17,5 +19,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: '*', // Apply to all pages
+  matcher: '*', // Apply to all routes
 };
