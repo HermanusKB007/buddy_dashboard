@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Space_Grotesk, Plus_Jakarta_Sans } from "next/font/google"
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
@@ -7,9 +8,8 @@ const proximaLike = Plus_Jakarta_Sans({ subsets: ["latin"] })
 export default function Home() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      {/* Navigation - make it responsive */}
+      {/* Navigation */}
       <nav className="p-4 flex flex-col md:flex-row items-start md:items-center">
-        {/* Logo and text - stack on mobile */}
         <div className="flex items-center gap-4 ml-0 md:ml-20">
           <Image
             src="/buddy_logo.png"
@@ -24,31 +24,30 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Button - same width on mobile and desktop */}
-      <div className="hidden md:flex flex-1 justify-end md:mr-20">
-        <a
-          href="https://hermanblackie.wixsite.com/buddy"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`
-            px-6 py-2 
-            bg-yellow-400 
-            text-black 
-            border-2 
-            border-black 
-            rounded-lg 
-            ${spaceGrotesk.className}
-            font-medium
-            transition-all
-            hover:bg-black 
-            hover:text-yellow-400
-            hover:border-yellow-500
-            text-center
-          `}
-        >
-          View Marketing Site
-        </a>
-      </div>
+        <div className="hidden md:flex flex-1 justify-end md:mr-20">
+          <a
+            href="https://hermanblackie.wixsite.com/buddy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`
+              px-6 py-2 
+              bg-yellow-400 
+              text-black 
+              border-2 
+              border-black 
+              rounded-lg 
+              ${spaceGrotesk.className}
+              font-medium
+              transition-all
+              hover:bg-black 
+              hover:text-yellow-400
+              hover:border-yellow-500
+              text-center
+            `}
+          >
+            View Marketing Site
+          </a>
+        </div>
       </nav>
 
       {/* Main Content */}
@@ -88,7 +87,6 @@ export default function Home() {
           </div>
         </div>
 
-
         <div className="w-full max-w-sm md:max-w-lg aspect-square flex items-center justify-center">
           <Image
               src="/buddy_building.png"
@@ -99,6 +97,19 @@ export default function Home() {
           />
         </div>
       </main>
+
+      {/* Footer with Privacy Policy and Terms of Service */}
+      <footer className="text-center p-4 text-gray-500 text-sm">
+        <div className="flex justify-center space-x-4">
+          <Link href="/privacy-policy" target="_blank" className="hover:underline">
+            Privacy Policy
+          </Link>
+          <span>|</span>
+          <Link href="/terms-of-service" target="_blank" className="hover:underline">
+            Terms of Service
+          </Link>
+        </div>
+      </footer>
     </div>
   )
 }
